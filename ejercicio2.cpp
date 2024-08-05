@@ -36,5 +36,16 @@ int main() {
     cin >> numeroAtletas;
     cin.ignore(); 
 
+
+for (int i = 0; i < numeroAtletas && i < MAX_ATLETAS; ++i) {
+        cout << "\nIngrese datos del atleta " << i + 1 << ":" << endl;
+        cout << "Nombre: ";
+        getline(cin, atletas[i].nombre);
+        cout << "Pais: ";
+        getline(cin, atletas[i].pais);
+        cout << "Medallas: ";
+        cin >> atletas[i].medallas;
+        cin.ignore(); 
+    }
     return 0;
 }
