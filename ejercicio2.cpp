@@ -16,3 +16,13 @@ void mostrarAtletas(const Atleta atletas[], int numAtletas) {
         cout << "-------------------------\n";
     }
 }
+
+void ordenarPorMedallas(Atleta atletas[], int numAtletas) {
+    for (int i = 0; i < numAtletas - 1; ++i) {
+        for (int j = i + 1; j < numAtletas; ++j) {
+            if (atletas[i].medallas < atletas[j].medallas) {
+                swap(atletas[i], atletas[j]);
+            }
+        }
+    }
+}
