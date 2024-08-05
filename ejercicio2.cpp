@@ -47,5 +47,16 @@ for (int i = 0; i < numeroAtletas && i < MAX_ATLETAS; ++i) {
         cin >> atletas[i].medallas;
         cin.ignore(); 
     }
+
+     cout << "\nInformacion de todos los atletas:\n";
+    mostrarAtletas(atletas, numeroAtletas);
+
+    string paisBuscar;
+    cout << "\nIngrese un pais para mostrar sus atletas: ";
+    getline(cin, paisBuscar);
+
+    Atleta atletasPais[MAX_ATLETAS];
+    int numeroAtletasPais = 0;
+
     return 0;
 }
