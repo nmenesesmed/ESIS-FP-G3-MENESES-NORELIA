@@ -58,5 +58,11 @@ for (int i = 0; i < numeroAtletas && i < MAX_ATLETAS; ++i) {
     Atleta atletasPais[MAX_ATLETAS];
     int numeroAtletasPais = 0;
 
+    for (int i = 0; i < numeroAtletas; ++i) {
+        if (atletas[i].pais == paisBuscar) {
+            atletasPais[numeroAtletasPais++] = atletas[i];
+        }
+    }
+
     return 0;
 }
