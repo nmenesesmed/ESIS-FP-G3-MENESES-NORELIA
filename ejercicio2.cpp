@@ -64,5 +64,18 @@ for (int i = 0; i < numeroAtletas && i < MAX_ATLETAS; ++i) {
         }
     }
 
+    if (numeroAtletasPais == 0) {
+        cout << "No se encontraron atletas del pais " << paisBuscar << endl;
+    } else {
+        cout << "\nAtletas del pais " << paisBuscar << ":\n";
+        mostrarAtletas(atletasPais, numeroAtletasPais);
+
+        ordenarPorMedallas(atletasPais, numeroAtletasPais);
+
+        cout << "\nAtleta con mayor numero de medallas:\n";
+        cout << "Nombre: " << atletasPais[0].nombre << endl;
+        cout << "Medallas: " << atletasPais[0].medallas << endl;
+    }
+
     return 0;
 }
