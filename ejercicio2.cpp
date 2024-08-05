@@ -26,3 +26,15 @@ void ordenarPorMedallas(Atleta atletas[], int numAtletas) {
         }
     }
 }
+
+int main() {
+    const int MAX_ATLETAS = 100;
+    Atleta atletas[MAX_ATLETAS];
+    int numeroAtletas = 0;
+
+    cout << "Ingrese el numero de atletas: ";
+    cin >> numeroAtletas;
+    cin.ignore(); 
+
+    return 0;
+}
